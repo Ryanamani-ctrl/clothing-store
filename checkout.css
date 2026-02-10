@@ -1,0 +1,49 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color:darkorange;
+        }
+
+        .checkout-box{
+            background-color:darkorange;
+            width: 70%;
+            max-width: 500px;
+            margin: 40px 70px;
+            padding: 20px 20px;
+            border-radius: 6px;
+    
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .summary {
+            margin-top: 20px;
+            padding: 10px;
+            background:aqua;
+        }
+
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            cursor:grab;
+        }
+        .btn:hover{
+            background-color:blueviolet ;
+        }
