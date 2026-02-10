@@ -1,15 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f0f14;
+  color: #fff;
+}
+
+
+.navbar {
+  background: #111;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffd5;
+}
+
+
+
+
+
+
 body {
             font-family: Arial, sans-serif;
-            background-color:darkorange;
+        
+
         }
 
         .checkout-box{
-            background-color:darkorange;
+            background-color:rgb(49, 45, 40);
             width: 70%;
             max-width: 500px;
             margin: 40px 70px;
             padding: 20px 20px;
             border-radius: 6px;
+            margin-left: 300px;
     
         }
 
@@ -27,23 +78,26 @@ body {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
+            border-radius: 15px;
         }
 
         .summary {
             margin-top: 20px;
             padding: 10px;
-            background:aqua;
+            
         }
 
         .btn {
             margin-top: 20px;
             width: 100%;
             padding: 10px;
-            background: black;
-            color: white;
+            background:aqua;
+            color:#0f0f14;
             border: none;
             cursor:grab;
+            border-radius: 15px;
         }
         .btn:hover{
             background-color:blueviolet ;
         }
+    
