@@ -103,4 +103,29 @@ body {
   font-weight: bold;
 }
 
+.product-card button{
+  margin-top: auto;
+  padding: 10px;
+  background-color: cyan;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
 
+.product-card button:hover{
+  background-color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+}
+
+.footer {
+  width: 100%;
+  padding: 30px 0;
+}
