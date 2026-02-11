@@ -1,31 +1,37 @@
-// Select the form
-const form = document.getElementById("checkoutForm");
+// checkout.js - Checkout Process and Order Management for URBAN EDGE
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Stop page reload
+const ORDER_STORAGE_KEY = 'urbanedge_orders';
 
-    // Get form values
-    const name = form.querySelector('input[type="text"]').value;
-    const email = form.querySelector('input[type="email"]').value;
-    const phone = form.querySelector('input[type="tel"]').value;
-    const address = form.querySelectorAll('input[type="text"]')[1].value;
-    const city = form.querySelectorAll('input[type="text"]')[2].value;
-    const payment = form.querySelector("select").value;
+// Get all orders from localStorage
+function getOrders() {
+  const orders = localStorage.getItem(ORDER_STORAGE_KEY);
+  return orders ? JSON.parse(orders) : [];
+}
 
-    // Simple validation
-    if (name === "" || email === "" || phone === "" || address === "" || city === "") {
-        alert("Please fill in all fields.");
-        return;
-    }
+// Save order to localStorage
+function saveOrder(order) {
+  const orders = getOrders();
+  orders.push(order);
+  localStorage.setItem(ORDER_STORAGE_KEY, JSON.stringify(orders));
+}
 
-    // Success message
-    alert(
-        "Order placed successfully!\n\n" +
-        "Name: " + name + "\n" +
-        "Payment Method: " + payment + "\n\n" +
-        "Thank you for shopping with URBAN EDGE!"
-    );
-
-    // Reset form after submission
-    form.reset();
-});
+// Display checkout summary
+function displayCheckoutSummary() {
+  const cart = getCart();
+  const summaryContainer = document.querySelector('.summary');
+  
+  if (!summaryContainer) return;
+  
+  if (cart.length === 0) {
+    summaryContainer.innerHTML = `
+      <p><strong>Order Summary</strong></p>
+      <p style="color: #aaa;">Your cart is empty</p>
+    `;
+    return;
+  }
+  
+  const subtotal = calculateTotal();
+  const shipping = 500;
+  const total = subtotal + shipping;
+  
+  let summaryHTML = '<p><strong>Order Summary</strong></p>'}
