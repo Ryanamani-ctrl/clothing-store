@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>URBANEDGE</title>
+  <title>URBANEDGE Street Wear</title>
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-logo">
       <a href="index.html">URBAN EDGE</a>
@@ -19,39 +22,37 @@
     </ul>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
     <h1>Welcome to URBAN EDGE</h1>
     <p>Your one-stop shop for trendy urban fashion.</p>
     <a href="products.html" class="btn">Shop Now</a>
   </header>
-<section class="products">
-  <h2>Featured Collection</h2>
 
-  <div class="card-container">
-    <div class="card">
-      <img src="pexels-ekaterinabelinskaya-4922976.jpg" alt="">
-      <h3>Urban Jacket</h3>
-      <p>KES 4,500</p>
-      <button>Add to Cart</button>
-    </div>
+  <!-- PRODUCTS SECTION -->
+  <section class="products">
+    <h2>Featured Collection</h2>
 
-    <div class="card">
-      <img src="pexels-hatice-baran-153179658-11142507.jpg">
-      <h3>Street Hoodie</h3>
-      <p>KES 3,200</p>
-      <button>Add to Cart</button>
-    </div>
+    <!-- FEATURED CARDS -->
+    <div class="card-container" id="featured-cards"></div>
 
-    <div class="card">
-      <img src="pexels-yelenaodintsova-14579191.jpg" alt="">
-      <h3>Classic Tee</h3>
-      <p>KES 1,800</p>
-      <button>Add to Cart</button>
-    </div>
-  </div>
-</section>
+    <!-- JS LOADED PRODUCTS -->
+    <h2>Shop From Our Collection</h2>
+    <div id="home-products" class="products-grid"></div>
+
+    <a href="products.html" class="btn">View All Products</a>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <p> 2026 URBANEDGE. All rights reserved.</p>
+    <p>2026 URBANEDGE. All rights reserved.</p>
   </footer>
 
+  <!-- SCRIPTS -->
+  <script src="products.js"></script>
+  <script src="home.js"></script>
+
+</body>
 </html>
+
+
