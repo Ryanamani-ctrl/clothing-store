@@ -38,9 +38,30 @@ function renderCart() {
   totalElement.textContent = "KES " + total;
 }
 
+
 function removeItem(index) {
+
+  // Get products from localStorage
+  let products = JSON.parse(localStorage.getItem("products")) || [];
+
+  // Get the cart item being removed
+  let removedItem = cart[index];
+
+  // Find matching product in products list
+  let product = products.find(p => p.id === removedItem.id);
+
+  if (product) {
+    // Restore stock
+    product.stock += removedItem.quantity;
+  }
+
+  // Remove item from cart
   cart.splice(index, 1);
+
+  // Save updated data
+  localStorage.setItem("products", JSON.stringify(products));
   localStorage.setItem("cartData", JSON.stringify(cart));
+
   renderCart();
 }
 
