@@ -42,6 +42,22 @@ body {
   color: #00ffd5;
 }
 
+.cart-link {
+  position: relative;
+}
+
+.cart-indicator {
+  position: absolute;
+  top: -8px;
+  right: -15px;
+  background-color: #00e0d6;
+  color: black;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  display: none;
+}
+
 /* PAGE TITLE */
 .page-title {
   text-align: center;
