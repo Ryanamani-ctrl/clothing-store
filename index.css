@@ -133,3 +133,15 @@ body {
   transform: translateY(-15px) scale(1.03);
   box-shadow: 0 20px 40px rgba(0,0,0,0.7);
 }
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+}
+
+.footer {
+  width: 100%;
+  padding: 30px 0;
+}

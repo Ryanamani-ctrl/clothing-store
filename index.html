@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>URBAN EDGE Street Wear</title>
+  <title>URBANEDGE</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -14,7 +14,11 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="products.html">Shop</a></li>
-      <li><a href="cart.html">Cart</a></li>
+      <li>
+        <a href="cart.html">Cart 
+          <span class="cart-count" style="display: none; background: #00ffd5; color: #000; padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-left: 5px; font-weight: bold;">0</span>
+        </a>
+      </li>
       <li><a href="checkout.html">Checkout</a></li>
     </ul>
   </nav>
@@ -24,36 +28,41 @@
     <p>Your one-stop shop for trendy urban fashion.</p>
     <a href="products.html" class="btn">Shop Now</a>
   </header>
-<section class="products">
-  <h2>Featured Collection</h2>
+  
+  <section class="products">
+    <h2>Featured Collection</h2>
 
-  <div class="card-container">
-    <div class="card">
-      <img src="pexels-ekaterinabelinskaya-4922976.jpg" alt="">
-      <h3>Urban Jacket</h3>
-      <p>KES 4,500</p>
-      <button>Add to Cart</button>
-    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="pexels-ekaterinabelinskaya-4922976.jpg" alt="Urban Jacket">
+        <h3>Urban Jacket</h3>
+        <p>KES 4,500</p>
+        <button>Add to Cart</button>
+      </div>
 
-    <div class="card">
-      <img src="pexels-hatice-baran-153179658-11142507.jpg">
-      <h3>Street Hoodie</h3>
-      <p>KES 3,200</p>
-      <button>Add to Cart</button>
-    </div>
+      <div class="card">
+        <img src="pexels-hatice-baran-153179658-11142507.jpg" alt="Street Hoodie">
+        <h3>Street Hoodie</h3>
+        <p>KES 3,200</p>
+        <button>Add to Cart</button>
+      </div>
 
-    <div class="card">
-      <img src="pexels-yelenaodintsova-14579191.jpg" alt="">
-      <h3>Classic Tee</h3>
-      <p>KES 1,800</p>
-      <button>Add to Cart</button>
+      <div class="card">
+        <img src="pexels-yelenaodintsova-14579191.jpg" alt="Classic Tee">
+        <h3>Classic Tee</h3>
+        <p>KES 1,800</p>
+        <button>Add to Cart</button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
   <footer class="footer">
-    <p> 2026 URBANEDGE. All rights reserved.</p>
+  <div class="footer-bottom">
+    <p>© 2026 URBAN EDGE. All rights reserved.</p>
+     </div>
   </footer>
+  <script src="cartUtils.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
+
 
